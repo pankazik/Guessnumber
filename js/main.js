@@ -10,24 +10,18 @@ function checkNumber() {
     document.querySelector('body').style.backgroundColor='green';
     document.getElementById('hint').innerText = 'Congratulations!'
     win = true;
-  }else if (document.getElementById('typednum').value>randomNum) {
-    document.getElementById('hint').innerText = 'Hint: Typed number is too high!'
+  }
+  else {
+    document.getElementById('hint').innerText = document.getElementById('typednum').value>randomNum?'Hint: Typed number is too high!':'Hint: Typed number is too low!';
     score-=1;
     document.getElementById('right').innerText = 'Score: '+ score;
   }
-  else if (document.getElementById('typednum').value<randomNum) {
-    document.getElementById('hint').innerText = 'Hint: Typed number is too low!'
-    score-=1;
-    document.getElementById('right').innerText = 'Score: '+ score;
-  }
-}else {
+}
+else {
   if (confirm('Wanna play again?')) {
     document.querySelector('body').style.backgroundColor='#303030';
     document.getElementById('number').innerText = '?';
     win = false;
     randomNum = Math.floor(Math.random()*10)+1;
     document.getElementById('hint').innerText = 'Hint';
-  }
-}
-
-}
+  }}}
