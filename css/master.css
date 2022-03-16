@@ -1,0 +1,67 @@
+body{
+  background-color: #303030;
+  font-family: 'Righteous',sans-serif;
+  color: white;
+}
+
+div.main{
+  display: flex;
+  flex-direction: column;
+}
+
+div.banner{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 2em;
+}
+
+div.banner>h1{
+  flex: 100%;
+}
+
+div.range{
+  display: flex;
+  flex:2;
+  align-items: center;
+}
+
+div.infopan{
+  display: flex;
+  flex-wrap: wrap;
+}
+div.infopan>h2{
+  flex: 3;
+}
+
+
+h2#right{
+  text-align: right;
+}
+
+input{
+  font-size: 2em;
+  text-align: center;
+  width: 4em;
+}
+
+div.answer{
+  display: flex;
+}
+
+div.hint{
+ align-self: flex-end;
+}
+div.userTper{
+  align-self:center;
+}
+
+p#number{
+  color: #303030;
+  width: 2em;
+  font-size: 3em;
+  text-align: center;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}

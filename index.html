@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Guess a number!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div class="main">
+<div class="banner">
+  <h1>Guess a number!</h1>
+</div>
+
+<div class="infopan">
+  <div class="range">
+<h2>Range between: 1-10 </h2>
+  </div>
+<h2 id='right'>Score: 20</h2>
+</div>
+<div class="answer">
+<p id='number'>?</p>
+</div>
+<div class="userTper">
+  <input id='typednum' type="number" name="" value="1" min="1" max="10">
+  <input type="button" name="" value="Confirm" onclick="checkNumber()">
+</div>
+<div class="hint">
+  <h2 id="hint">Hint</h2>
+</div>
+  </div>
+<script type="text/javascript" src='js/main.js '>
+</script>
+</body>
+</html>
