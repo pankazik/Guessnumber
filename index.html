@@ -9,19 +9,26 @@
     <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
-    <div class="main">
+
+      <div class="malin hidden">
+        <p>Change background color:</p>
+      <input class="colorbg" type="color" name="" value="#303030"/>
+      </div>
+      <div class="main">
 <div class="banner">
+  <button id='settings' type="button" name="button" >Settings</button>
   <h1>Guess a number!</h1>
 </div>
 
 <div class="infopan">
+
   <div class="range">
 <h2>Range between: 1-10 </h2>
   </div>
-<h2 id='right'>Score: 20</h2>
+<h2 id='scorenum'>Score: 20</h2>
 </div>
 <div class="answer">
-<p id='number'>?</p>
+<p id='answernumber'>?</p>
 </div>
 <div class="userTper">
   <input id='typednum' type="number" name="" value="1" min="1" max="10">

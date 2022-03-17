@@ -9,6 +9,20 @@ div.main{
   flex-direction: column;
 }
 
+.blur{
+  filter:blur(6px);
+}
+
+div.malin{
+  position: absolute;
+  background-color: rgba(90, 90, 90, 0.97);
+  height: 50%;
+  width:50%;
+  left: 25%;
+  top:25%;
+  z-index: 1;
+}
+
 div.banner{
   display: flex;
   flex-wrap: wrap;
@@ -35,7 +49,7 @@ div.infopan>h2{
 }
 
 
-h2#right{
+h2#scorenum{
   text-align: right;
 }
 
@@ -56,7 +70,7 @@ div.userTper{
   align-self:center;
 }
 
-p#number{
+p#answernumber{
   color: #303030;
   width: 2em;
   font-size: 3em;
@@ -64,4 +78,8 @@ p#number{
   background-color: white;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hidden{
+  visibility:hidden;
 }
